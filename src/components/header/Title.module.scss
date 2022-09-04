@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-$colors: #f2385a, #f5a503, #e9f1df, #56d9cd, #3aa1bf;
+// $colors: #f2385a, #ffb86c, #21231e, #56d9cd, #3aa1bf;
+$colors: #e0195b, #fd5925, #3e84fc, #5dda42;
 $max: length($colors);
 $dash: 70;
 $dash-gap: 10;
@@ -9,12 +10,12 @@ $time-step: calc($time / $max);
 
 .text {
     fill: none;
-    stroke-width: 3;
+    stroke-width: 6.5;
     stroke-linejoin: round;
     stroke-dasharray: $dash $dash-space;
     stroke-dashoffset: 0;
     -webkit-animation: stroke $time infinite linear;
-    animation: stroke $time infinite linear;
+    animation: stroke $time infinite linear; 
 
     @for $item from 1 through $max {
         &:nth-child(#{$max}n + #{$item}) {
@@ -39,21 +40,22 @@ $time-step: calc($time / $max);
 }
 
 /* Other styles */
-// body {
-//   background: #111;
-//   background-size: .2em 100%;
-//   font: 5em/1 Open Sans, Impact;
-//   text-transform: uppercase;
-//   margin: 0;
-// }
+
+.a-link {
+    display: inline-block;
+    font-weight: 700;
+    height:100%;
+}
 
 .svg {
-    width: 100px;
-    height: 2.50rem;
+    display: block;
+    width: 100%;
+    height: 2.5rem;
     background-color: transparent;
+    font-weight: 700;
+
 }
 .name {
-    font: 5em/1 Open Sans, Impact;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-size: 8em;
+    // text-transform: uppercase;
 }

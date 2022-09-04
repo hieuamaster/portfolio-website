@@ -10,14 +10,16 @@
     height: 100%;
     width: 100%;
     // width: var(--default-layout-header-width);
-    padding: 0 var(--default-layout-horizontal-spacer) 0 20px;
+    padding: 0 var(--default-layout-horizontal-spacer);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .left-content {
-
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .right-content {
