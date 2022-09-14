@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
+
+.home {
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    // padding-top: 60px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.left-content {
+    width: 300px;
+    height: 300px;
+}
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 4rem;
+
+    .mouse-wrapper {
+        color: var(--primary-color);
+        font-size: 1.4rem;
+        font-weight: 400;
+        display: block;
+        max-width: 100px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .mouse {
+        border: solid 2px var(--primary-color);
+        display: block;
+        position: relative;
+        width: 2rem;
+        height: 2.6rem;
+        border-radius: 1.6rem;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    .wheel {
+        background: var(--primary-color);
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) translateZ(0);
+        height: 4px;
+        width: 4px;
+        border-radius: 100%;
+        animation: ani-mouse 2s linear infinite;
+    }
+}
+
+.intro {
+    font-size: 8rem;
+    font-family: 'Assistant', sans-serif;
+    color: var(--primary);
+}
+
+.iam {
+    padding-bottom: 48px;
+    overflow-wrap: break-word;
+}
+.btn-contact {
+    display: inline-block;
+    margin: 0;
+    max-width: 250px;
+    width: 180px;
+    height: 50px;
+}
+
+//media queries
+
+    
+
+.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 740px) {
+    .wide {
+        width: 644px;
+    }
+    .right-content {
+        align-items: flex-start;
+    }
+    .content {
+        flex-direction: row;
+    }
+    .left-content {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 644px;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wide {
+        width: 984px;
+    }
+    .left-content {
+        width: 500px;
+        height: 500px;
+        padding: 0 16px;
+    }
+}

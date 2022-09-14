@@ -7,7 +7,7 @@ const Title = () => {
         <a className={cx('a-link')} href="/">
             <svg className={cx('svg')} viewBox="0 0 390 130">
                 <symbol id="s-text">
-                    <text className={cx('name')} text-anchor="middle" x="50%" y="50%" dy=".3em">
+                    <text className={cx('name')} textAnchor="middle" x="50%" y="50%" dy=".3em">
                         HieuA
                     </text>
                 </symbol>

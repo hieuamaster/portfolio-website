@@ -1,0 +1,123 @@
+.about {
+    padding-top: 110px;
+    position: relative;
+    display: block;
+}
+
+.container {
+    width: 100%;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5rem 3.1rem 0 3.1rem;
+}
+
+.ava {
+    height: 200px;
+    width: 200px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+}
+
+.description {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    background-color: var(--color-box-bg);
+    border-radius: 0.7rem;
+    padding: 3rem 1.5rem 3rem 3rem;
+}
+
+.introduce {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    p {
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+        line-height: 2.5rem;
+        margin-bottom: 2rem;
+        color: var(--color-text-primary);
+    }
+}
+
+.button-wrapper {
+    width: 150px;
+}
+
+.skills {
+    padding-top: 2rem;
+    
+}
+
+.skill-items {
+    margin-bottom: 2rem;
+    border: 1px solid var(--primary);
+    padding: 1.5rem 2.5rem;
+    border-radius: 0.7rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.skill-info {
+    h4 {
+        font-size: 1.7rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: var(--color-text-primary);
+    }
+    p {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        margin-top: 0.5rem;
+        color: var(--color-text-primary);
+    }
+}
+
+
+//media queries
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 740px) {
+    .wide {
+        width: 644px;
+    }
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 644px;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wide {
+        width: 984px;
+    }
+}
