@@ -44,10 +44,18 @@ body {
 }
 
 // General styles
-.container {
-    width: var(--container-width-large);
-    margin: 0 auto;
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 6px 16px;
+    background-color: transparent;
 }
+
 
 h1,
 h2,
