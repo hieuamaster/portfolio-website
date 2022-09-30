@@ -1,14 +1,10 @@
-$primary-color: #fede59;
-$contact-btn-color: #fd5925;
-$download-btn-color: #3e84fc;
-$text-btn-color: rgba(255, 255, 255, 1);
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 6px 16px;
     border: 1px solid transparent;
-    background-color: var(--color-bg-primary);
+    background-color: transparent;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 22px;
@@ -18,15 +14,35 @@ $text-btn-color: rgba(255, 255, 255, 1);
 
 .btn_default {
     border-radius: 4px;
-    margin-left: 12px;
     min-width: 100px;
+    min-height: 4rem;
+    width: 100%;
     letter-spacing: 0.5px;
+    color: var(--color-text-primary);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background-color: var(--color-btn-background-hover);
+        color: var(--color-text-primary-hover);
 
+        .icon {
+            color: var(--color-text-primary-hover);
+        }
+    }
+
+    @media (min-width: 1023px) {
+        .title, .icon {
+            font-size: 1.8rem;
+        }
+        .icon {
+            width: 25px;
+            height: 20px;
+        }
+    }
 }
 
 .icon + .title,
 .title + .icon {
-    margin-left: 8px;
+    margin-left: 1rem;
 }
 
 .icon {
@@ -34,14 +50,15 @@ $text-btn-color: rgba(255, 255, 255, 1);
     width: 20px;
     height: 20px;
     text-align: center;
-    color: $primary-color;
+    color: var(--primary);
+
 }
 
 //Button types
 .btn_contact {
-    color: $text-btn-color;
-    background-color: $contact-btn-color;
-    min-height: 50px;
+    color: var(--color-text-white);
+    background-color: var(--color-btn-contact);
+    height: 100%;
     width: 100%;
     border: none;
     border-radius: 50px;
@@ -49,14 +66,19 @@ $text-btn-color: rgba(255, 255, 255, 1);
     line-height: 22px;
     font-weight: 600;
     font-size: 1.6rem;
-    &:hover {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), $contact-btn-color;
-    }
+    transition: all 0.3s ease-in-out;
 
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), var(--color-btn-contact);
+    }
+    @media (min-width: 1023px) {
+        font-size: 2rem;
+    }
 }
+
 .btn_download {
-    color: $text-btn-color;
-    background-color: $download-btn-color;
+    color: var(--color-text-white);
+    background-color: var(--color-btn-download);
     min-height: 40px;
     width: 100%;
     border: none;
@@ -66,84 +88,68 @@ $text-btn-color: rgba(255, 255, 255, 1);
     font-weight: 500;
     font-size: 1.5rem;
     &:hover {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), $download-btn-color;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), var(--color-btn-download);
     }
 }
 
-
-
-
-
-.login_big {
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 4px;
-    color: rgba(254, 44, 85, 1);
-    border-color: rgba(254, 44, 85, 1);
-    background-color: rgba(255, 255, 255, 1);
-    min-width: 168px;
-    min-height: 48px;
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 600;
-    margin-top: 20px;
-    width: 100%;
-
-    &:hover {
-        background-color: rgba(254, 44, 85, 0.06);
-    }
-}
-
-.follow {
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 4px;
-    color: rgba(254, 44, 85, 1);
-    border-color: rgba(254, 44, 85, 1);
-    background-color: rgba(255, 255, 255, 1);
-    min-width: 106px;
-    min-height: 28px;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    min-width: 88px;
-    padding: 0 10px;
-    font-family: ProximaNova, PingFangSC, sans-serif;
-    &:hover {
-        background-color: rgba(254, 44, 85, 0.06);
-    }
-}
-.theme {
-    border: 1px solid rgba(22, 24, 35, 0.12);
+.menu_btn {
+    border: 1px solid var(--color-border-primary);
     border-radius: 50%;
     margin-left: 0;
-    height: 40px;
-    width: 40px;
-    background-color: $text-btn-color;
+    padding: 6px;
+    height: 30px;
+    width: 30px;
+    color: var(--color-text-primary-hover);
+    background-color: transparent;
+    transition: all 0.3 ease-in-out;
     &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
-        color: $primary-color;
+        background-color: var(--color-bg-primary);
+        color: var(--primary);
     }
 }
 
-.get_app {
-    border: none;
-    background: none;
-    outline: none;
-    padding: 0 8px;
-    color: rgba(22, 24, 35, 0.75);
-    font-weight: 700;
-    font-size: 14px;
-    min-width: 90px;
-    height: 32px;
-    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
-    border-radius: 52px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(22, 24, 35, 0.12);
-
+.close_btn {
+    border: 1px solid var(--color-border-primary);
+    border-radius: 50%;
+    margin-left: 0;
+    padding: 6px;
+    height: 30px;
+    width: 30px;
+    color: var(--color-text-white);
+    background-color: transparent;
+    transition: all 0.3 ease-in-out;
     &:hover {
-        border-color: rgba(22, 24, 35, 0.2);
-        background-color: rgba(22, 24, 35, 0.03);
+        background-color: var(--color-btn-background-hover);
+        color: var(--color-text-primary-hover);
+    }
+}
+
+.menu_sidebar {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.5px;
+    color: var(--color-text-white);
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background-color: transparent;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    .title,
+    .icon {
+        font-size: 2rem;
+    }
+    &:hover {
+        background-color: var(--color-btn-background-hover);
+        color: var(--color-text-primary-hover);
+
+        .icon {
+            color: var(--color-text-primary-hover);
+        }
+    }
+
+    .icon + .title,
+    .title + .icon {
+        margin-left: 2rem;
     }
 }

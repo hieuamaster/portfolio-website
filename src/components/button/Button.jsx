@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 function Button({
     children,
     className,
-    theme = false,
+    menu_btn = false,
     btn_default = false,
     btn_contact = false,
     btn_download = false,
@@ -15,6 +15,8 @@ function Button({
     btn_large = false,
     leftIcon = false,
     rightIcon = false,
+    menu_sidebar = false,
+    close_btn = false,
     onClick,
     ...passProps
 
@@ -31,7 +33,9 @@ function Button({
         btn_ripple_effect,
         btn_medium,
         btn_large,
-        theme,
+        menu_btn,
+        menu_sidebar,
+        close_btn,
     });
     
     return (
