@@ -11,9 +11,9 @@ import { motion } from 'framer-motion';
 const cx = classNames.bind(styles);
 const Header = () => {
     const [toggle, setToggle] = useState(false);
-
+   
     return (
-        <div className={cx('container')}>
+        <div className={cx('container')} >
             <div className={cx('left-content')}>
                 <Title />
                 <div className={cx('btn-menu')}>

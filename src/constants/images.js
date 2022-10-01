@@ -6,7 +6,7 @@ import typescript from '~/assets/typescript.svg';
 import vercel from '~/assets/vercel.svg';
 import tailwind from '~/assets/tailwindcss.svg';
 import react from '~/assets/react.svg';
-
+import nodejs from '~/assets/nodejs.svg';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     css,
@@ -17,4 +17,5 @@ export default {
     vercel,
     tailwind,
     react,
+    nodejs,
 };

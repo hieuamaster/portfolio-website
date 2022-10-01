@@ -6,9 +6,15 @@
     width: 100%;
     height: 100vh;
 
+    background: url('../../assets/game1.png');
+    // background: url('https://bizverse.io/images/home/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     .container {
         margin: 0 auto;
-        max-width: 1200px;    
+        max-width: 1200px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -16,8 +22,8 @@
         width: 100%;
         height: 100%;
         @media (min-width: 740px) {
-            justify-content: center;    
-            padding: 0;    
+            justify-content: center;
+            padding: 0;
         }
         @media (min-width: 768px) and (max-width: 1023px) {
             width: 700px;
@@ -25,7 +31,7 @@
         @media (min-width: 1024px) and (max-width: 1239px) {
             width: 984px;
         }
-        
+
         .content {
             display: flex;
             flex-direction: column;
@@ -51,7 +57,7 @@
                 .intro {
                     font-size: 4rem;
                     font-family: 'Assistant', sans-serif;
-                    color: var(--color-text-primary);
+                    color: var(--color-text-white);
 
                     span {
                         font-size: 4rem;
@@ -61,7 +67,7 @@
                 }
 
                 .iam {
-                    color: var(--color-text-primary);
+                    color: var(--color-text-white);
                     padding: 4rem 0 6rem;
                     overflow-wrap: break-word;
                 }
@@ -88,7 +94,6 @@
             @media (min-width: 740px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                
 
                 .left-content {
                     width: 350px;
@@ -113,7 +118,7 @@
                             font-size: 5rem;
                         }
                     }
-                    .iam{
+                    .iam {
                         font-size: 2.5rem;
                     }
                 }
@@ -126,7 +131,7 @@
                 .right-content {
                     .intro {
                         font-size: 6rem;
-                        span{
+                        span {
                             font-size: 6rem;
                         }
                     }
@@ -135,10 +140,7 @@
                     }
                 }
             }
-            
         }
-
-        
     }
 }
 
@@ -152,23 +154,22 @@
     @media (min-width: 740px) {
         bottom: 4rem;
     }
-    
 
     .mouse-wrapper {
-        color: var(--color-text-primary);
+        color: var(--color-text-white);
         font-size: 1.4rem;
         font-weight: 400;
         display: block;
         max-width: 100px;
         margin: auto;
         text-align: center;
-        @media (min-width: 1024px){
+        @media (min-width: 1024px) {
             font-size: 1.6rem;
         }
     }
 
     .mouse {
-        border: solid 2px var(--color-text-primary);
+        border: solid 2px var(--color-text-white);
         display: block;
         position: relative;
         width: 2rem;
@@ -179,7 +180,7 @@
     }
 
     .wheel {
-        background: var(--color-text-primary);
+        background: var(--color-text-white);
         display: block;
         position: absolute;
         left: 50%;
@@ -210,7 +211,6 @@
 
 /* Tablet */
 @media (min-width: 740px) {
-
 }
 
 /* Tablet - PC low resolution */
@@ -219,5 +219,4 @@
 
 /* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
-    
 }

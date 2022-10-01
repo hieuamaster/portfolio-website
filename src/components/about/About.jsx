@@ -39,6 +39,10 @@ const About = () => {
             name: 'Vercel',
             img: images.vercel,
         },
+        {
+            name: 'NodeJS',
+            img: images.nodejs,
+        },
     ];
     return (
         <section id="about" className={cx('about')}>
