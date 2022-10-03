@@ -40,7 +40,7 @@ const Header = () => {
                                         About
                                     </Button>
                                 </a>
-                                <a href="#project">
+                                <a href="#works">
                                     <Button
                                         onClick={() => setToggle(false)}
                                         menu_sidebar
@@ -70,7 +70,7 @@ const Header = () => {
                             About
                         </Button>
                     </a>
-                    <a href="#project">
+                    <a href="#works">
                         <Button btn_default leftIcon={<FontAwesomeIcon icon={faLaptopCode} />}>
                             Project
                         </Button>

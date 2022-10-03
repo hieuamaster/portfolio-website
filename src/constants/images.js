@@ -7,6 +7,14 @@ import vercel from '~/assets/vercel.svg';
 import tailwind from '~/assets/tailwindcss.svg';
 import react from '~/assets/react.svg';
 import nodejs from '~/assets/nodejs.svg';
+import linkedin from '~/assets/linkedin.svg';
+import facebook from '~/assets/facebook.png';
+import github from '~/assets/github.png';
+import gmail from '~/assets/gmail.png';
+
+
+
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     css,
@@ -18,4 +26,8 @@ export default {
     tailwind,
     react,
     nodejs,
+    facebook,
+    linkedin,
+    gmail,
+    github,
 };

@@ -1,7 +1,6 @@
 .about {
     flex: 1;
     width: 100%;
-    height: 100vh;
     padding-top: 6rem;
     flex-direction: column;
     
@@ -63,7 +62,7 @@
         }
         .introduce {
             border-radius: 0.7rem;
-            padding: 3rem 1.5rem 3rem 3rem;
+            padding: 4rem 1.5rem 4rem 3rem;
             background-color: var(--color-box-bg);
             display: flex;
             flex-wrap: wrap;
@@ -83,13 +82,19 @@
         }
 
         .skills {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             padding-top: 4rem;
-            h4 {
+            h4, h1 {
                 padding-top: 2rem;
-                font-size: 1.7rem;
-                font-weight: 700;
+                text-align: center;
                 letter-spacing: 0.5px;
                 color: var(--color-text-primary);
+            }
+
+            h1 {
+                font-weight: 700;
             }
             .skill-items {
                 padding: 4rem 0;
@@ -101,16 +106,19 @@
                     gap: 2rem;
                 }
 
+                @media (min-width: 740px) {
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    gap: 2rem;
+                }
+
+
                 .skill-item {
                     height: 100%;
                     user-select: none;
                     border-radius: 1.5rem;
                     backdrop-filter: blur(10px);
-                    background: var(--color-box-bg);
-                    box-shadow: #00000026 0px 5px 15px 0px;
-                    border: 1px solid #fff3;
                     text-align: center;
-
+                    
                     .skill-center {
                         padding: 1.6rem;
                         display: flex;
@@ -118,13 +126,13 @@
                         align-items: center;
 
                         img {
-                            // width: 6rem;
+                            width: 6rem;
                             height: 6rem;
                         }
 
                         p {
                             margin-top: 1rem;
-                            font-size: 1.2rem;
+                            font-size: 1.3rem;
                             color: var(--color-text-primary);
                         }
                     }

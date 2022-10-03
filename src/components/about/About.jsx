@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 import Button from '~/components/button/Button';
 import Avatar from '~/assets/avatar.jpg';
 import { images } from '~/constants';
+import { motion } from 'framer-motion';
 const cx = classNames.bind(styles);
 
 const About = () => {
@@ -63,15 +64,22 @@ const About = () => {
                         </div>
                     </div>
                     <div className={cx('skills')}>
-                        <h4>My skills & Knowledge</h4>
+                        <h1>My skills & Knowledge</h1>
+                        <h4>Technologies and languages that I use to make my product everyday</h4>
                         <div className={cx('skill-items')}>
                             {skills.map((skill, index) => (
-                                <div key={index} className={cx('skill-item')}>
+                                <motion.div
+                                    whileInView={{ opacity: 1 }}
+                                    whileHover={{ scale: 1.1 }}
+                                    transition={{ duration: 0.5, type: 'tween' }}
+                                    key={index}
+                                    className={cx('skill-item')}
+                                >
                                     <div className={cx('skill-center')}>
                                         <img src={skill.img} alt={skill.name}></img>
                                         <p>{skill.name}</p>
                                     </div>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
                     </div>
