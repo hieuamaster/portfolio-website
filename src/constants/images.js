@@ -7,7 +7,7 @@ import vercel from '~/assets/vercel.svg';
 import tailwind from '~/assets/tailwindcss.svg';
 import react from '~/assets/react.svg';
 import nodejs from '~/assets/nodejs.svg';
-import linkedin from '~/assets/linkedin.svg';
+import linkedin from '~/assets/linkedin.png';
 import facebook from '~/assets/facebook.png';
 import github from '~/assets/github.png';
 import gmail from '~/assets/gmail.png';

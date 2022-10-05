@@ -1,6 +1,99 @@
 .contact {
     flex: 1;
     width: 100%;
+    height: 100%;
+    padding: 0;
     align-items: center;
-    
+    h1 {
+        color: var(--color-text-primary);
+        padding-top: 2rem;
+        margin: 5rem 0;
+        text-align: center;
+        letter-spacing: 0.5px;
+        font-weight: 700;
+    }
+    .wrapper {
+        display: flex;
+        margin: 0 auto;
+
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 5rem;
+        width: 100%;
+        max-width: 1200px;
+        @media (min-width: 740px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: flex-start;
+            padding: 0;
+            margin: 0 5rem;
+        }
+        @media (min-width: 740px) and (max-width: 1023px) {
+            width: 700px;
+        }
+        @media (min-width: 1024px) and (max-width: 1239px) {
+            width: 984px;
+        }
+        .contact_form {
+            width: 80%;
+            padding-bottom: 4rem;
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .title {
+                    color: var(--color-text-primary);
+                    font-size: 1.6rem;
+                }
+                .input {
+                    color: var(--color-text-primary);
+                    border: 1px solid var(--color-text-primary);
+                    border-radius: 0.5rem;
+                    padding: 1rem;
+                }
+                .submit_btn {
+                    color: var(--color-text-primary);
+                    background-color: var(--color-btn-download);
+                    padding: 1rem;
+                    border-radius: 0.5rem;
+                    margin-top: 1rem;
+                    font-size: 1.6rem;
+                    &:hover {
+                        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+                            var(--color-btn-download);
+                    }
+                }
+            }
+        }
+
+        .contact_other {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 80%;
+            h4 {
+                font-size: 2rem;
+                text-align: center;
+                letter-spacing: 0.5px;
+                color: var(--color-text-primary);
+            }
+
+            .social_contact {
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                .social_img {
+                    height: 3rem;
+                    width: 3rem;
+                    margin-right: 1rem;
+                }
+
+                .social_name {
+                    color: var(--color-text-primary);
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
 }

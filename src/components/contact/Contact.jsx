@@ -27,15 +27,25 @@ const contacts = [
 ];
 const Contact = () => {
     return (
-        <section id="#contact" className={cx('contact')}>
+        <section id="contact" className={cx('contact')}>
             <h1>Get in touch</h1>
             <div className={cx('wrapper')}>
-                <div className={cx('contact_form')}></div>
+                <div className={cx('contact_form')}>
+                    <form className={cx('form')}>
+                        <label className={cx('title')} for="name">Your name</label>
+                        <input className={cx('input')} type="text" name="name" id="name" placeholder="Your name..." required minLength="3"></input>
+                        <label className={cx('title')} for="email">Your email</label>
+                        <input className={cx('input')} type="email" name="email" id="email" placeholder="Your email..." required></input>
+                        <label className={cx('title')} for="subject">Subject</label>
+                        <input className={cx('input')} type="text" name="subject" id="subject" placeholder="I want to talk to you" required></input>
+                        <button className={cx('submit_btn')}>Send</button>
+                    </form>
+                </div>
                 <div className={cx('contact_other')}>
-                    <h1>Other places</h1>
+                    <h4>Other places</h4>
                     {contacts.map((contact, index) => (
-                        <a key={index} className={cx('social_contact')} href={contact.url}>
-                            <img src={contact.img} alt={contact.name} />
+                        <a key={index} className={cx('social_contact')} target="_blank" rel="noopener noreferrer" href={contact.url}>
+                            <img className={cx('social_img')} src={contact.img} alt={contact.name} />
                             <p className={cx('social_name')}>{contact.name}</p>
                         </a>
                     ))}
