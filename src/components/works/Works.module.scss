@@ -18,15 +18,12 @@
         margin: 0 auto;
         align-items: center;
         flex-direction: column;
-        padding-bottom: 5rem;
         width: 100%;
+        gap: 2rem;
+        padding: 0 5vw 5rem;
         max-width: 1200px;
         @media (min-width: 740px) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: flex-start;
-            padding: 0;
-            margin: 0 5rem;
+            
         }
         @media (min-width: 740px) and (max-width: 1023px) {
             width: 700px;
@@ -35,18 +32,17 @@
             width: 984px;
         }
 
-        .project_items {
-            display: flex;
-            gap: 2rem;
-            padding: 0 5vw;
-            flex-direction: column;
-            width: 100%;
+        .item_container {
             margin-bottom: 5rem;
-
+            @media (min-width: 1024px){
+                display: flex;
+                gap: 2rem;
+            }
             .item_demo {
                 border: 2px solid var(--color-border-primary);
                 border-radius: 2rem;
                 overflow: hidden;
+                margin-bottom: 3rem;
                 .border_blank {
                     display: flex;
                     align-items: center;
@@ -86,7 +82,7 @@
                     }
                 }
                 .prj_btn {
-                    padding: 2rem 0;
+                    padding: 3rem 0;
                     display: flex;
                     gap: 1rem;
                     .view_demo {
@@ -94,8 +90,8 @@
                         border-radius: 0.25rem;
                         height: 4rem;
                         &:hover {
-                            background:linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
-                            var(--color-btn-download); ;
+                            background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+                                var(--color-btn-download);
                         }
                     }
                     .view_github {
@@ -103,8 +99,8 @@
                         background-color: var(--color-btn-github);
                         height: 4rem;
                         &:hover {
-                            background:linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
-                            var(--color-btn-github); ;
+                            background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+                                var(--color-btn-github);
                         }
                     }
                 }

@@ -11,6 +11,8 @@ import linkedin from '~/assets/linkedin.png';
 import facebook from '~/assets/facebook.png';
 import github from '~/assets/github.png';
 import gmail from '~/assets/gmail.png';
+import cssfx from '~/assets/cssfx.webp';
+
 
 
 
@@ -30,4 +32,5 @@ export default {
     linkedin,
     gmail,
     github,
+    cssfx,
 };
